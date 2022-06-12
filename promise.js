@@ -9,8 +9,8 @@ const promiseOutput = async (emosi) => {
     let jumlahEmosi = 0;
     hasil.map((promise1) => promise1.hasil === emosi && (jumlahEmosi++));
     return jumlahEmosi;
-  } catch (error) {
-    console.error(error);
+  } catch (err) {
+    console.log(err);
   }
 };
 
